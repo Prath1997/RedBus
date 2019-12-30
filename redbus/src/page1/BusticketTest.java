@@ -23,15 +23,31 @@ public class BusticketTest {
 	  
 	
 	  bo.findElement(By.xpath("//input[@id='src']")).sendKeys("hyderbad");
+	  Thread.sleep(1000);
 	  bo.findElement(By.xpath("//li[contains(text(),'Hyderabad (All Locations)')]")).click();
+	  Thread.sleep(1000);
+	  
 
 	  bo.findElement(By.xpath("//input[@id='dest']")).sendKeys("nashik");
+	  Thread.sleep(1000);
 	  bo.findElement(By.xpath("//li[contains(text(),'Thakkar Bazaar, Nashik')]")).click();
+	  Thread.sleep(1000);
 	  
-	  bo.findElement(By.xpath("//input[@id='onward_cal']")).click();
 	  
+	bo.findElement(By.xpath("//label[@class='db text-trans-uc move-up']")).click();
+	Thread.sleep(1000);
+	bo.findElement(By.xpath("//div[@id='rb-calendar_onward_cal']//button[contains(text(),'>')]")).click();
+	Thread.sleep(1000);
+	bo.findElement(By.xpath("//td[@class='we day'][contains(text(),'4')]")).click();
+	Thread.sleep(1000);
+	
+	
 	  bo.findElement(By.xpath("//label[@class='db text-trans-uc tal']")).click();
-	  bo.findElement(By.xpath("//div[@id='rb-calendar_return_cal']//button[contains(text(),'>')]")).click();
-	  bo.findElement(By.xpath("//td[@class='we day'][contains(text(),'4')]")).click();
+	  Thread.sleep(1000);
+	  bo.findElement(By.xpath("//div[@id='rb-calendar_return_cal']//td[@class='we day'][contains(text(),'12')]")).click();
+	
+	  bo.findElement(By.xpath("//button[@id='search_btn']")).click();
+	  Thread.sleep(1000);
+	 
   }
 }
