@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="page1.FirstpagelinkTest">
+      <class name="seleniumwebdriver.NewTest">
         <methods>
-          <include name="TC_001"/>
+          <include name="a"/>
           <include name="b"/>
+          <include name="radiobutton"/>
         </methods>
-      </class> <!-- page1.FirstpagelinkTest -->
+      </class> <!-- seleniumwebdriver.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
